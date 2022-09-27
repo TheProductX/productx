@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media-query.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+  <title>ProductX</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#">
+      <img src="./img/logo.svg" alt="logo" class="logo" srcset="">
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="#mentors">Mentors</a></li>
+        <li><a class="main-nav-link" href="#north-star">North Star</a></li>
+        <li><a class="main-nav-link" href="#workshop">Workshop</a></li>
+        <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="main-nav-link btn btn--full" href="#">Book your slot</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO -->
+    <section class="section-hero" id="hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary margin-bottom-5">
+            Crack your dream product role with Product<span style="color: #339af0;">X</span>
+          </h1>
+
+          <ul class="list margin-bottom-5">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
+              <span>0 to 1 interview preparation</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
+              <span>Get customized PM resources</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-circle-outline"></ion-icon>
+              <span>Build network with industry's top PM</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn--full margin-right-sm">I need a mentor</a>
+
+          <!-- CUSTOMERS -->
+          <div class="customer">
+            <div class="customer-imgs">
+              <img src="./img/users/user-1.jpg" alt="customer photo" />
+              <img src="./img/users/user-2.jpg" alt="customer photo" />
+              <img src="./img/users/user-3.jpg" alt="customer photo" />
+              <img src="./img/users/user-4.jpg" alt="customer photo" />
+              <img src="./img/users/user-5.jpg" alt="customer photo" />
+            </div>
+            <p class="customer-text">
+              <span>100+</span> mentees cracked dream product role
+            </p>
+          </div>
+
+        </div>
+        <div class="hero-img-box">
+          <img src="./img/hero.svg" alt="Two people having mock interview" class="hero-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD - 1 (TOP MENTORS) -->
+    <section class="section-mentors" id="mentors">
+      <div class="circle-left"></div>
+      <div class="circle-right"></div>
+      <div class="container">
+        <p class="subheading">Mentors</p>
+        <h3 class="heading-secondary">
+          Discover the world's top mentors
+        </h3>
+
+        <div class="mentors-slider swiper-profile">
+          <div class="swiper-wrapper">
+            <carousel-card profile-image="./img/profile/raj-shekhar-singh.jpg"
+              linkedin-url="https://www.linkedin.com/in/shekharrajsingh/" company-logo="./img/company-logo/razorpay.png"
+              class="swiper-slide">
+              <div slot="profile-name">Raj</div>
+              <div slot="institute-name">IIM Bangalore</div>
+              <div slot="profile-role">Product Manager</div>
+            </carousel-card>
+            <carousel-card profile-image="./img/profile/praveen.jpg"
+              linkedin-url="https://www.linkedin.com/in/praveen-dwivedi/" company-logo="./img/company-logo/paytm.png"
+              class="swiper-slide">
+              <div slot="profile-name">Praveen</div>
+              <div slot="institute-name">XLRI Jamshedpur</div>
+              <div slot="profile-role">Product Manager</div>
+            </carousel-card>
+            <carousel-card profile-image="./img/profile/kanchan.jpg"
+              linkedin-url="https://www.linkedin.com/in/kanchan-khetan-46bb69124/"
+              company-logo="./img/company-logo/mckinsey_&_company.png" class="swiper-slide">
+              <div slot="profile-name">Kanchan</div>
+              <div slot="institute-name">IIT Bombay</div>
+              <div slot="profile-role">Product Strategist</div>
+            </carousel-card>
+            <carousel-card profile-image="./img/profile/srinivas.jpg"
+              linkedin-url="https://www.linkedin.com/in/bhukya-srinivas-naik-iima/"
+              company-logo="./img/company-logo/medianet.png" class="swiper-slide">
+              <div slot="profile-name">Srinivas</div>
+              <div slot="institute-name">IIM Ahmedabad</div>
+              <div slot="profile-role">Product Manager</div>
+            </carousel-card>
+            <carousel-card profile-image="./img/profile/kanishk.jpg"
+              linkedin-url="https://www.linkedin.com/in/kanishkchaturvedi/"
+              company-logo="./img/company-logo/microsoft.png" class="swiper-slide">
+              <div slot="profile-name">Kanishk</div>
+              <div slot="institute-name">XLRI Jamshedpur</div>
+              <div slot="profile-role">Product Manager</div>
+            </carousel-card>
+            <carousel-card profile-image="./img/profile/rajvardhan-kavi.jpg"
+              linkedin-url="https://www.linkedin.com/in/rajvardhankavi/" company-logo="./img/company-logo/tata-cliq.png"
+              class="swiper-slide">
+              <div slot="profile-name">Rajvardhan Kavi</div>
+              <div slot="institute-name">FMS Delhi</div>
+              <div slot="profile-role">Product Manager</div>
+            </carousel-card>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <h3 class="heading-secondary margin-top-bottom-4">
+          Our product mentors belong to
+        </h3>
+
+        <div class="wrapper swiper-institution">
+          <div class="institutions swiper-wrapper">
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIM_Ahmedabad.svg.png" alt="IIM-Ahmedabad" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIM_Bangalore_Logo.svg.png" alt="IIM-Bangalore" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIM_Calcutta_Logo.svg.png" alt="IIM-Chennai" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIM_Kozhikode_Logo.svg.png" alt="IIM-Kolkata" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIM_Lucknow_Logo.svg.png" alt="ISB" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIT_Guwahati_Logo.svg.png" alt="XLRI" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIT_Kanpur_Logo.svg.png" alt="SPJAIN" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIT_Kharagpur_Logo.svg.png" alt="MDI-GURGAON" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/IIT_Madras_Logo.svg.png" alt="MDI-GURGAON" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/Indian_Institute_of_Technology_Bombay_Logo.svg.png" alt="MDI-GURGAON"
+                srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/Indian_Institute_of_Technology_Delhi_Logo.svg.png" alt="MDI-GURGAON"
+                srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/Indian_School_of_Business,_Hyderabad_Logo.png" alt="MDI-GURGAON"
+                srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/S._P._Jain_Institute_of_Management_and_Research_logo.svg.png"
+                alt="MDI-GURGAON" srcset="">
+            </div>
+            <div class="institution-img-box swiper-slide">
+              <img src="./img/institution logo/XLRI.png" alt="MDI-GURGAON" srcset="">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section-pricing" id="pricing">
+      <div class="container">
+        <p class="subheading">Pricing</p>
+        <h3 class="heading-secondary">
+          Discover the world's top mentors
+        </h3>
+      </div>
+
+      <div class="container grid grid--3-cols">
+        <!--  PRICE 1-->
+        <div class="pricing-plan pricing-plan--starter">
+          <header class="plan-header">
+            <p class="plan-name">Starter</p>
+            <p class="plan-price"><span>&#8377;</span>0</p>
+          </header>
+
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>1 Mock + Feedback</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Complete CV Review</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Mentorship (Career in PM)</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Learn PM Concepts</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Company Specifuc Prep</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Customized PM Notes</span>
+            </li>
+          </ul>
+          <div class="plan-sign-up">
+            <a href="#" class="btn btn--full">Get now!</a>
+          </div>
+        </div>
+
+        <!-- PRICE 2 -->
+        <div class="pricing-plan pricing-plan--complete">
+          <header class="plan-header">
+            <p class="plan-name">Starter</p>
+            <p class="plan-price"><span>&#8377;</span>499</p>
+          </header>
+
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>1 Mock + Feedback</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Complete CV Review</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Mentorship (Career in PM)</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Learn PM Concepts</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Company Specifuc Prep</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Customized PM Notes</span>
+            </li>
+          </ul>
+          <div class="plan-sign-up">
+            <a href="#" class="btn btn--full">Get now!</a>
+          </div>
+        </div>
+
+        <!-- PRICE 3 -->
+        <div class="pricing-plan pricing-plan--complete pricing-plan--complete--main">
+          <header class="plan-header">
+            <p class="plan-name">Complete</p>
+            <p class="plan-price"><span>&#8377;</span>999</p>
+          </header>
+
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>1 Mock + Feedback</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Complete CV Review</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Mentorship (Career in PM)</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Learn PM Concepts</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Company Specifuc Prep</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Customized PM Notes</span>
+            </li>
+          </ul>
+          <div class="plan-sign-up">
+            <a href="#" class="btn btn--full">Get now!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR MENTEES BELONG TO -->
+    <section class="section-our-mentees" id="north-star">
+      <div class="container">
+        <p class="subheading">Our Mentees</p>
+        <h3 class="heading-secondary">
+          Our mentees belong to
+        </h3>
+      </div>
+
+      <div class="container">
+        <div class="mentees-company-list">
+          <div class="mentees-company">
+            <img src="./img/company-logo/amazon.png" alt="amazon" srcset="">
+          </div>
+          <div class="mentees-company">
+            <img src="./img/company-logo/mckinsey_&_company.png" alt="mckinsey_company" srcset="">
+          </div>
+          <div class="mentees-company mentees-company--padding">
+            <img src="./img/company-logo/medianet.png" alt="medianet" srcset="">
+          </div>
+          <div class="mentees-company">
+            <img src="./img/company-logo/microsoft.png" alt="microsoft" srcset="">
+          </div>
+          <div class="mentees-company">
+            <img src="./img/company-logo/paytm.png" alt="paytm" srcset="">
+          </div>
+          <div class="mentees-company mentees-company--padding">
+            <img src="./img/company-logo/razorpay.png" alt="razorpay" srcset="">
+          </div>
+          <div class="mentees-company">
+            <img src="./img/company-logo/tata-cliq.png" alt="tata-cliq" srcset="">
+          </div>
+          <div class="mentees-company">
+            <img src="./img/company-logo/walmart.png" alt="walmart" srcset="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutions and Form -->
+    <section class="section-institutions-and-form" id="workshop">
+      <div class="institution-and-form container">
+        <div class="institution-wrapper">
+          <span class="subheading">Institutions</span>
+          <h2 class="heading-secondary">Institutions we have collaborated with</h2>
+
+          <div class="institutions-list">
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIM_Ahmedabad.svg.png" alt="IIM-Ahmedabad" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIM_Bangalore_Logo.svg.png" alt="IIM-Bangalore" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIM_Calcutta_Logo.svg.png" alt="IIM-Chennai" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIM_Kozhikode_Logo.svg.png" alt="IIM-Kolkata" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIM_Lucknow_Logo.svg.png" alt="ISB" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIT_Guwahati_Logo.svg.png" alt="XLRI" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIT_Kanpur_Logo.svg.png" alt="SPJAIN" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIT_Kharagpur_Logo.svg.png" alt="MDI-GURGAON" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/IIT_Madras_Logo.svg.png" alt="MDI-GURGAON" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/Indian_Institute_of_Technology_Bombay_Logo.svg.png" alt="MDI-GURGAON"
+                srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/Indian_Institute_of_Technology_Delhi_Logo.svg.png" alt="MDI-GURGAON"
+                srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/Indian_School_of_Business,_Hyderabad_Logo.png" alt="MDI-GURGAON"
+                srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/S._P._Jain_Institute_of_Management_and_Research_logo.svg.png"
+                alt="MDI-GURGAON" srcset="">
+            </div>
+            <div class="institution-logo">
+              <img src="./img/institution logo/XLRI.png" alt="MDI-GURGAON" srcset="">
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-wrapper">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Connect us!</h2>
+              <form name="sign-up" class="cta-form" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input name="full-name" required type="text" placeholder="John Smith" id="full-name" />
+                </div>
+                <div>
+                  <label for="email">Email Address</label>
+                  <input name="email" required type="email" placeholder="me@example.com" id="email" />
+                </div>
+                <div>
+                  <label for="select-where">Where did you heard about us?</label>
+                  <select name="select-where" required id="select-where">
+                    <option value="">Please choose one option</option>
+                    <option value="friends">Friends and Family</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section-testimonials" id="testimonial">
+      <div class="custom-shape-divider-bottom-1663930723">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div class="container">
+        <span class="subheading">Testimonials</span>
+        <h2 class="heading-secondary">Our Testimonials</h2>
+      </div>
+
+      <div class="container">
+        <div class="testimonial-list grid grid--3-cols">
+          <div class="testimonial">
+            <div class="testimonial-quote-img">
+              <img src="./img/double-quotes.svg" class="double-quote-img" alt="double-quote" srcset="">
+            </div>
+            <div class="testimonial-text-box">
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, unde beatae molestiae adipisci
+                laborum exercitationem aspernatur qui? Id, magnam optio inventore, laboriosam saepe totam.
+              </p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="testimonial-author-box">
+              <div class="testimonial-author-img-box">
+                <img src="./img/users/user-1.jpg" alt="user 1" srcset="">
+              </div>
+              <div class="testimonial-author-text">
+                <h3 class="testimonial-author-name">Abhishekh Khurana</h3>
+                <p class="testimonial-author-role">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-quote-img">
+              <img src="./img/double-quotes.svg" class="double-quote-img" alt="double-quote" srcset="">
+            </div>
+            <div class="testimonial-text-box">
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, unde beatae molestiae adipisci
+                laborum exercitationem aspernatur qui? Id, magnam optio inventore, laboriosam saepe totam.
+              </p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="testimonial-author-box">
+              <div class="testimonial-author-img-box">
+                <img src="./img/users/user-1.jpg" alt="user 1" srcset="">
+              </div>
+              <div class="testimonial-author-text">
+                <h3 class="testimonial-author-name">Abhishekh Khurana</h3>
+                <p class="testimonial-author-role">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-quote-img">
+              <img src="./img/double-quotes.svg" class="double-quote-img" alt="double-quote" srcset="">
+            </div>
+            <div class="testimonial-text-box">
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, unde beatae molestiae adipisci
+                laborum exercitationem aspernatur qui? Id, magnam optio inventore, laboriosam saepe totam.
+              </p>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="testimonial-author-box">
+              <div class="testimonial-author-img-box">
+                <img src="./img/users/user-1.jpg" alt="user 1" srcset="">
+              </div>
+              <div class="testimonial-author-text">
+                <h3 class="testimonial-author-name">Abhishekh Khurana</h3>
+                <p class="testimonial-author-role">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="custom-shape-divider-bottom-1664088660">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+    </div>
+
+    <div class="container grid grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img src="./img/logo.svg" alt="ProductX logo" class="logo" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          <strong>ProductX</strong>. All rights reserved. <span class="year">2022</span>
+        </p>
+      </div>
+      <nav class="nav-col">
+        <p class="footer-heading">About Us</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#mentors">Our Mentors</a></li>
+          <li><a class="footer-link" href="#institutions-and-form">Institutions</a></li>
+          <li><a class="footer-link" href="#north-star">North Star</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-col">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-nav">
+          <li><a id="unlink-active" class="footer-link" href="./privacy-policy.html">Privacy Policy</a></li>
+          <li><a id="unlink-active" class="footer-link" href="./terms-conditions.html">Terms And Conditions</a></li>
+          <li><a id="unlink-active" class="footer-link" href="./refund-policy.html">Refund And Cancellation</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-col">
+        <p class="footer-heading">Product</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#pricing">Pricing</a></li>
+          <li><a class="footer-link" href="#testimonial">Testimonials</a></li>
+        </ul>
+      </nav>
+      <div class="address-col">
+        <p class="footer-heading">Contact Us</p>
+        <address class="contacts">
+          <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+          <p>
+            <a class="footer-link" href="mailto:hello@omnifood.com">hello@example.com</a>
+          </p>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/carouselCard.js"></script>
+</body>
+
+</html>

@@ -76,20 +76,6 @@ template.innerHTML = `
       color: #fff;
     }
 
-    .company-logo {
-      height: 3.5rem;
-      width: 7.5rem;
-      background-color: #fff;
-      padding: 0.5rem;
-      border-radius: 10px;
-      object-fit: conver;
-    }
-
-    .company-logo:hover {
-      transform: scale(1.5);
-      transition: 0.5s ease-in;
-    }
-
     ion-icon {
       color: white;
     }
@@ -108,7 +94,6 @@ template.innerHTML = `
         </a>
       </div>
       <div class="company">
-        <img class="company-logo" alt="company logo"/>
         <p class="profile-role"><slot name="profile-role"></p>
       </div>
     </div>
@@ -124,7 +109,6 @@ class CarouselCard extends HTMLElement {
 
   connectedCallback() {
     const profileImage = this.getAttribute("profile-image");
-    const companyLogo = this.getAttribute("company-logo");
 
     if (profileImage) {
       this.shadowRoot.querySelector(
@@ -134,11 +118,6 @@ class CarouselCard extends HTMLElement {
 
     this.shadowRoot.querySelector(".linkedin").href =
       this.getAttribute("linkedin-url") ?? "https://www.linkedin.com";
-
-    if (companyLogo) {
-      this.shadowRoot.querySelector(".company-logo").src =
-        this.getAttribute("company-logo");
-    }
   }
 }
 

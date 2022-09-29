@@ -74,9 +74,8 @@ btnNav.addEventListener("click", () => {
 
 // Smooth scroll
 // Smooth scroll behavior
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll(".main-nav-link");
 allLinks.forEach((link) => {
-  if (link.id === "unlink-active") return;
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const href = link.getAttribute("href");

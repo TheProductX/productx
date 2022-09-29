@@ -13,7 +13,7 @@
 
   .institutions-list {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 3rem;
+    column-gap: 7rem;
     row-gap: 4rem;
   }
 }

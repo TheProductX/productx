@@ -211,7 +211,7 @@
   }
 
   .mentees-company-list {
-    grid-template-columns: repeat(2, 1.5fr);
+    grid-template-columns: repeat(2, 5fr);
     gap: 2rem;
   }
 }

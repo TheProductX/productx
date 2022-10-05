@@ -307,17 +307,17 @@
   text-align: center;
 }
 
-/* OUR MENTORS BELONG TO */
+/* OUR MENTEES BELONG TO */
 .section-our-mentees {
   padding: 9.6rem 0;
 }
 
 .mentees-company-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
-  column-gap: 20rem;
+  column-gap: 15rem;
 }
 
 .mentees-company img {

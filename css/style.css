@@ -228,13 +228,13 @@
 /* PRICING */
 .section-pricing {
   background-color: #e7f5ff;
-  padding: 9.6rem 0;
+  padding: 7rem 0;
 }
 
 .pricing-plan {
-  border-radius: 11px;
+  border-radius: 8px;
   width: 100%;
-  padding: 4.6rem;
+  padding: 3rem;
 }
 
 .pricing-plan--starter {

@@ -104,10 +104,10 @@ body {
   background-color: #4dabf7;
 }
 
-*:focus {
+/* *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem #339af0;
-}
+} */
 
 .list {
   display: flex;

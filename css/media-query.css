@@ -19,15 +19,24 @@
 }
 
 @media (max-width: 1040px) {
-  .grid--3-cols {
+  .grid--3-cols,
+  .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .pricing-plan--complete--main {
+  .pricing-plan {
+    align-items: center;
+  }
+
+  .pricing-plan .list span {
+    font-size: 1.8rem;
+  }
+
+  /* .pricing-plan--complete--main {
     grid-column: 1 / -1;
     justify-self: center;
     width: 50%;
-  }
+  } */
 
   .section-institutions-and-form {
     grid-template-columns: 1fr;
@@ -55,6 +64,11 @@
   .list {
     justify-content: center;
     align-items: center;
+  }
+
+  .mentees-company-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
   }
 
   .institution-and-form {
@@ -174,6 +188,7 @@
     padding: 4.8rem 0;
   }
 
+  .grid--4-cols,
   .grid--3-cols {
     grid-template-columns: 1fr;
     width: 100%;
@@ -185,6 +200,10 @@
 
   .pricing-plan--complete--main {
     width: 100%;
+  }
+
+  .pricing-plan .list span {
+    font-size: 1.5rem;
   }
 
   .institutions-list {

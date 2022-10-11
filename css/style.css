@@ -228,13 +228,13 @@
 /* PRICING */
 .section-pricing {
   background-color: #e7f5ff;
-  padding: 7rem 0;
+  padding: 9.6rem 0;
 }
 
 .pricing-plan {
-  border-radius: 8px;
+  border-radius: 11px;
   width: 100%;
-  padding: 3rem;
+  padding: 2.3rem;
 }
 
 .pricing-plan--starter {
@@ -245,7 +245,7 @@
 .pricing-plan--complete {
   position: relative;
   background-color: #a5d8ff;
-  padding: 4.8rem;
+  padding: 2.3rem;
   overflow: hidden;
 }
 
@@ -255,7 +255,7 @@
   top: 6%;
   right: -18%;
   background-color: #339af0;
-  padding: 0.8rem 8rem;
+  padding: 0.8rem 6rem;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -265,7 +265,11 @@
 
 .plan-header {
   text-align: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.pricing-plan .list span {
+  font-size: 1.4rem;
 }
 
 .plan-name {
@@ -274,18 +278,18 @@
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.75px;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .plan-price {
-  font-size: 6.2rem;
+  font-size: 4.2rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 1.6rem;
 }
 
 .plan-price span {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-right: 0.8rem;
 }
@@ -297,7 +301,7 @@
 }
 
 .plan-sign-up {
-  margin-top: 4.8rem;
+  margin-top: 2.4rem;
   text-align: center;
 }
 

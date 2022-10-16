@@ -150,9 +150,24 @@
   }
 }
 
+@media (max-width: 760px) {
+  .strip--desktop {
+    display: none;
+  }
+
+  .strip--mobile {
+    display: flex;
+  }
+}
+
 @media (max-width: 450px) {
-  body {
+  /* body {
     overflow-x: hidden;
+  } */
+
+  .strip-link,
+  .strip-content {
+    font-size: 1.4rem;
   }
 
   .heading-secondary {

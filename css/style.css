@@ -1,6 +1,36 @@
 /**************************************/
 /* HEADER */
 /**************************************/
+.strip--desktop,
+.strip--mobile {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #4dabf7;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.strip--mobile {
+  display: none;
+}
+
+.strip-content {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.strip-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+}
 
 .header {
   display: flex;
@@ -65,13 +95,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 8rem;
+  height: 7rem;
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
   background-color: rgba(255, 255, 255, 0.97);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
   z-index: 999;
+  margin-top: 3.5rem;
 }
 
 .sticky .section-hero {

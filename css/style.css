@@ -1,18 +1,24 @@
 /**************************************/
 /* HEADER */
 /**************************************/
-.strip {
+.strip--desktop,
+.strip--mobile {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
   background-color: #4dabf7;
   color: #fff;
-  padding: 1rem 4.8rem;
+  padding: 1rem 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   z-index: 1000;
+}
+
+.strip--mobile {
+  display: none;
 }
 
 .strip-content {

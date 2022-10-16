@@ -550,6 +550,62 @@
 }
 
 /**************************************/
+/* FAQ SECTIONS */
+/**************************************/
+.section-faq {
+  padding: 9.6rem 0 4.8rem 0;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.accordion-content-box .accordion-label {
+  position: relative;
+  padding: 1.5rem;
+  background-color: #339af0;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.accordion-content-box .accordion-label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  font-size: 3rem;
+}
+
+.accordion-content-box.accordion-active .accordion-label::before {
+  content: "-";
+}
+
+.accordion-content-box .accordion-content {
+  position: relative;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  transition: 0.5s;
+  color: #111;
+
+  /* Change using active class */
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.accordion-content-box.accordion-active .accordion-content {
+  height: auto;
+  padding: 1.5rem;
+}
+
+/**************************************/
 /* FOOTER SECTIONS */
 /**************************************/
 .custom-shape-divider-bottom-1664088660 {

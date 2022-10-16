@@ -124,3 +124,12 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHero);
+
+// Expand accordions when clicked
+const accordions = document.querySelectorAll(".accordion-content-box");
+
+accordions.forEach((accordion) => {
+  accordion.addEventListener("click", () => {
+    accordion.classList.toggle("accordion-active");
+  });
+});

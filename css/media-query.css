@@ -248,4 +248,8 @@
     grid-template-columns: repeat(2, 5fr);
     gap: 2rem;
   }
+
+  .accordion-content-box .accordion-label {
+    font-size: 1.6rem;
+  }
 }

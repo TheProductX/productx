@@ -78,6 +78,7 @@ template.innerHTML = `
 
     ion-icon {
       color: white;
+      --ionicon-stroke-width: 16px;
     }
 
   </style>
@@ -90,7 +91,7 @@ template.innerHTML = `
           <p class="institute-name"><slot name="institute-name"></p>
         </div>
         <a target="_blank" class="linkedin">
-          <ion-icon size="large" name="logo-linkedin"></ion-icon>
+          <ion-icon size="large" name="logo-linkedin" class="logo-linkedin"></ion-icon>
         </a>
       </div>
       <div class="company">

@@ -43,7 +43,7 @@ template.innerHTML = `
       font-size: 1.9rem;
       font-weight: 600;
       color: #fff;
-      text-transform: uppercase;
+      text-transform: capitalize;
     }
 
     .content .institute-name {
@@ -71,6 +71,11 @@ template.innerHTML = `
       gap: 1rem;
     }
 
+    .linkedin-img {
+      height: 4rem;
+      width: 4rem;
+    }
+
     .profile-role {
       font-size: 1.6rem;
       color: #fff;
@@ -91,7 +96,7 @@ template.innerHTML = `
           <p class="institute-name"><slot name="institute-name"></p>
         </div>
         <a target="_blank" class="linkedin">
-          <ion-icon size="large" name="logo-linkedin" class="logo-linkedin"></ion-icon>
+          <img src="../img/linkedin.svg" alt="Linkedin Logo" class="linkedin-img" />
         </a>
       </div>
       <div class="company">

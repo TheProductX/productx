@@ -564,11 +564,13 @@
 
 .accordion-content-box .accordion-label {
   position: relative;
-  padding: 1.5rem;
-  background-color: #339af0;
-  color: #fff;
+  padding: 2rem 0;
+  color: #333;
   font-size: 1.8rem;
+  font-weight: 600;
   cursor: pointer;
+  line-height: 1.6;
+  border-bottom: 1px solid rgb(210, 208, 208);
 }
 
 .accordion-content-box .accordion-label::before {
@@ -578,6 +580,7 @@
   right: 2rem;
   transform: translateY(-50%);
   font-size: 3rem;
+  font-weight: 400;
 }
 
 .accordion-content-box.accordion-active .accordion-label::before {
@@ -586,12 +589,11 @@
 
 .accordion-content-box .accordion-content {
   position: relative;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   font-size: 1.6rem;
   line-height: 1.6;
-  background-color: #f2f2f2;
   transition: 0.5s;
-  color: #111;
+  color: #444;
 
   /* Change using active class */
   height: 0;
@@ -602,7 +604,7 @@
 
 .accordion-content-box.accordion-active .accordion-content {
   height: auto;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 /**************************************/

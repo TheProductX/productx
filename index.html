@@ -321,7 +321,7 @@
 
         <!-- PDF File -->
         <!-- <iframe class="price-iframe" src="./pdf/Chanakya Neeti.pdf" frameborder="0"></iframe> -->
-        <div id='viewer' class="pdf-viewer"></div>
+        <div id="adobe-dc-view" class="pdf-viewer"></div>
       </div>
 
     </section>
@@ -665,27 +665,21 @@
   <script src="./js/script.js"></script>
   <script src="./js/carouselCard.js"></script>
 
-  <script>
-    WebViewer({
-      path: '/lib', // path to the PDF.js Express'lib' folder on your server
-      licenseKey: '9k8b58IDt1EIl7AYmQew',
-      initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf',
-      // initialDoc: '/path/to/my/file.pdf',  // You can also use documents on your server
-    }, document.getElementById('viewer'))
-      .then(instance => {
-        // now you can access APIs through the WebViewer instance
-        const { Core, UI } = instance;
-
-        // adding an event listener for when a document is loaded
-        Core.documentViewer.addEventListener('documentLoaded', () => {
-          console.log('document loaded');
+  <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function () {
+      var adobeDCView = new AdobeDC.View({ clientId: "0150cd7faf5345e481cb4f74b3bd6692", divId: "adobe-dc-view" });
+      adobeDCView.previewFile({
+        content: {
+          location:
+            { url: "https://documentservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf" }
+        },
+        metaData: { fileName: "Bodea Brochure.pdf" }
+      },
+        {
+          embedMode: "SIZED_CONTAINER"
         });
-
-        // adding an event listener for when the page number has changed
-        Core.documentViewer.addEventListener('pageNumberUpdated', (pageNumber) => {
-          console.log(`Page number is: ${pageNumber}`);
-        });
-      });
+    });
   </script>
 </body>
 

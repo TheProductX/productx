@@ -46,6 +46,28 @@
 }
 
 /**************************************/
+/* SWIPER */
+/**************************************/
+.swiper-button-next,
+.swiper-button-prev {
+  background-image: url(../img/chevron-left.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-color: rgba(66, 64, 70, 0.8);
+  border-radius: 5px;
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+/**************************************/
 /* NAVIGATION */
 /**************************************/
 
@@ -95,14 +117,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 7rem;
+  height: 8rem;
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
   background-color: rgba(255, 255, 255, 0.97);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
   z-index: 999;
-  margin-top: 3.5rem;
 }
 
 .sticky .section-hero {
@@ -112,7 +133,6 @@
 /**************************************/
 /* HERO */
 /**************************************/
-
 .section-hero {
   background-color: #e7f5ff;
   padding: 2.5rem 0 3rem 0;
@@ -173,7 +193,7 @@
 /**************************************/
 .section-mentors {
   position: relative;
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 9.6rem 0;
 }
 
 .swiper-profile,
@@ -257,26 +277,29 @@
 }
 
 /* PRICING */
+/* PRICING */
 .section-pricing {
   background-color: #e7f5ff;
   padding: 9.6rem 0;
 }
 
+.pricing-grid {
+  grid-template-columns: 1fr 2fr;
+}
+
 .pricing-plan {
   border-radius: 11px;
-  width: 100%;
-  padding: 2.3rem;
 }
 
 .pricing-plan--starter {
-  justify-self: end;
   border: 2px solid #339af0;
+  padding: 4.6rem;
 }
 
 .pricing-plan--complete {
   position: relative;
   background-color: #a5d8ff;
-  padding: 2.3rem;
+  padding: 4.8rem;
   overflow: hidden;
 }
 
@@ -286,7 +309,7 @@
   top: 6%;
   right: -18%;
   background-color: #339af0;
-  padding: 0.8rem 6rem;
+  padding: 0.8rem 8rem;
   color: #fff;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -296,11 +319,7 @@
 
 .plan-header {
   text-align: center;
-  margin-bottom: 1.2rem;
-}
-
-.pricing-plan .list span {
-  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .plan-name {
@@ -309,18 +328,18 @@
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.75px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.4rem;
 }
 
 .plan-price {
-  font-size: 4.2rem;
+  font-size: 6.2rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 1.6rem;
 }
 
 .plan-price span {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 500;
   margin-right: 0.8rem;
 }
@@ -332,7 +351,7 @@
 }
 
 .plan-sign-up {
-  margin-top: 2.4rem;
+  margin-top: 4.8rem;
   text-align: center;
 }
 

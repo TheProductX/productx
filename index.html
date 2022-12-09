@@ -13,6 +13,7 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./lib/webviewer.min.js"></script>
 
   <link rel="stylesheet" href="./css/general.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -23,17 +24,8 @@
 </head>
 
 <body>
+
   <!-- HEADER -->
-  <!-- <div class="strip strip--desktop">
-    <p class="strip-content">3 Weeks Exclusive PM Cohort for Tier 1 MBA Placements Starting 10th Dec</p>
-    <a href="https://imjo.in/Uxcr9Y" class="strip-link">Apply Now!</a>
-  </div> -->
-
-  <!-- <div class="strip strip--mobile">
-    <p class="strip-content">Become a Product Manager!</p>
-    <a href="https://imjo.in/Uxcr9Y" class="strip-link">Join PM Cohort</a>
-  </div> -->
-
   <header class="header">
     <a href="#">
       <img src="./img/productx-resize.png" alt="logo" class="logo" srcset="">
@@ -42,7 +34,7 @@
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li><a class="main-nav-link" href="#mentors">Mentors</a></li>
-        <li><a class="main-nav-link" href="#north-star">North-Star</a></li>
+        <li><a class="main-nav-link" href="#north-star">North Star</a></li>
         <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
         <li><a class="main-nav-link" href="#workshop">Workshop</a></li>
         <li><a class="btn btn--full" target="_blank"
@@ -65,7 +57,7 @@
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="heading-primary" style="margin-top:1.3em">
-            Hack to crack your dream product role with Product<span style="color: #339af0;">X</span> 
+            Hack to crack your dream product role with Product<span style="color: #339af0;">X</span>
           </h1>
           <ul class="list margin-bottom-5">
             <li class="list-item">
@@ -81,10 +73,11 @@
               <span>Build network with industry's top PMs</span>
             </li>
           </ul>
-          <a target="_blank" href="#pricing" class="btn btn--full margin-right-sm" style="margin-bottom:2em">Apply Now</a>
+          <a target="_blank" href="#pricing" class="btn btn--full margin-right-sm" style="margin-bottom:2em">Apply
+            Now</a>
 
           <!-- CUSTOMERS -->
-          <!-- <div class="customer" style="margin-bottom:2em">
+          <div class="customer" style="margin-bottom:2em">
             <div class="customer-imgs">
               <img src="./img/users/user-1.jpg" alt="customer photo" />
               <img src="./img/users/user-2.jpg" alt="customer photo" />
@@ -95,7 +88,7 @@
             <p class="customer-text">
               <span>30+</span> mentees cracked APM & PM roles
             </p>
-          </div>  -->
+          </div>
 
         </div>
         <div class="hero-img-box">
@@ -250,19 +243,20 @@
       <div class="container">
         <div class="mentees-company-list">
           <div class="mentees-company">
-            <img src="./img/company-logo/microsoft.png" alt="Msy" srcset="">
+            <img src="./img/company-logo/microsoft.png" alt="Msy" srcset="" class="scale-img">
           </div>
           <div class="mentees-company">
-            <img src="./img/company-logo/flipkart-logo-transparent-vector-3.png" alt="Flipkart" srcset="">
+            <img src="./img/company-logo/flipkart-logo-transparent-vector-3.png" alt="Flipkart" srcset=""
+              class="scale-img">
           </div>
           <div class="mentees-company">
-            <img src="./img/company-logo/Atlassian-logo.png" alt="Atlassian" srcset="">
+            <img src="./img/company-logo/Atlassian-logo.png" alt="Atlassian" srcset="" class="scale-img">
           </div>
           <div class="mentees-company mentees-company--padding">
             <img src="./img/company-logo/Nykaa_Logo.png" alt="Nykaa" srcset="">
           </div>
           <div class="mentees-company">
-            <img src="./img/company-logo/CRED-LOGO2.png" alt="Cred" srcset="">
+            <img src="./img/company-logo/CRED-LOGO2.png" alt="Cred" srcset="" class="scale-img">
           </div>
           <div class="mentees-company">
             <img src="./img/company-logo/Meesho_Logo_Full.png" alt="meesho" srcset="">
@@ -271,7 +265,7 @@
             <img src="./img/company-logo/myntra.png" alt="Myntra" srcset="">
           </div>
           <div class="mentees-company">
-            <img src="./img/company-logo/PhonePe-Logo.png" alt="PhonePe" srcset="">
+            <img src="./img/company-logo/PhonePe-Logo.png" alt="PhonePe" srcset="" class="scale-img">
           </div>
         </div>
       </div>
@@ -286,7 +280,7 @@
         </h3>
       </div>
 
-      <div class="container grid grid--4-cols">
+      <div class="container grid pricing-grid">
         <!--  PRICE 1-->
         <div class="pricing-plan pricing-plan--starter">
           <header class="plan-header">
@@ -325,122 +319,11 @@
           </div>
         </div>
 
-        <!-- PRICE 2 -->
-        <div class="pricing-plan pricing-plan--complete">
-          <header class="plan-header">
-            <p class="plan-name">Free Trial</p>
-            <p class="plan-price"><span>&#8377;</span>0</p>
-          </header>
-
-          <ul class="list">
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>1 Mock + Feedback</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              <span>Complete CV Review</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              <span>Mentorship (Career in PM)</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              <span>Learn PM Concepts</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              <span>Company Specific Prep</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              <span>Customized PM Notes</span>
-            </li>
-          </ul>
-          <div class="plan-sign-up">
-            <a target="_blank"
-              href="https://join.slack.com/t/newworkspace-ax37324/shared_invite/zt-1h4cno3x3-C05s2NpolkCi9VHQAkCXIw"
-              class="btn btn--full">Try Now</a>
-          </div>
-        </div>
-
-        <!-- PRICE 3 -->
-        <div class="pricing-plan pricing-plan--complete">
-          <header class="plan-header">
-            <p class="plan-name">Pro</p>
-            <p class="plan-price"><span>&#8377;</span>999</p>
-          </header>
-
-          <ul class="list">
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>2 Mocks + Feedback</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Complete CV Review</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Customized PM Notes</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              <span>Mentorship (Career in PM)</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              <span>Learn PM Concepts</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              <span>Company Specific Prep</span>
-            </li>
-          </ul>
-          <div class="plan-sign-up">
-            <a target="_blank" href="https://imjo.in/Xeamfz" class="btn btn--full">Enroll Now</a>
-          </div>
-        </div>
-
-        <!-- PRICE 4 -->
-        <div class="pricing-plan pricing-plan--complete pricing-plan--complete--main">
-          <header class="plan-header">
-            <p class="plan-name">Cohort</p>
-            <p class="plan-price"><span>&#8377;</span>2499</p>
-          </header>
-
-          <ul class="list">
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>3 Mocks + Feedback</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Complete CV Review</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Mentorship (Career in PM)</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Learn PM Concepts</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Company Specific Prep</span>
-            </li>
-            <li class="list-item">
-              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-              <span>Customized PM Notes</span>
-            </li>
-          </ul>
-          <div class="plan-sign-up">
-            <a target="_blank" href="https://imjo.in/Uxcr9Y" class="btn btn--full">Enroll Now</a>
-          </div>
-        </div>
+        <!-- PDF File -->
+        <!-- <iframe class="price-iframe" src="./pdf/Chanakya Neeti.pdf" frameborder="0"></iframe> -->
+        <div id="adobe-dc-view" class="pdf-viewer"></div>
       </div>
+
     </section>
 
     <!-- Institutions and Form -->
@@ -655,7 +538,7 @@
           <p class="accordion-label">Why should i join ProductX?</p>
           <div class="content">
             <p class="accordion-content">
-               Content to be updated soon!
+              Content to be updated soon!
             </p>
           </div>
         </div>
@@ -665,7 +548,7 @@
           <p class="accordion-label">How to enroll for cohort-based program and what are the beneifts?</p>
           <div class="content">
             <p class="accordion-content">
-               Content to be updated soon!
+              Content to be updated soon!
             </p>
           </div>
         </div>
@@ -675,7 +558,7 @@
           <p class="accordion-label">Who is the right-fit for ProductX?</p>
           <div class="content">
             <p class="accordion-content">
-               Content to be updated soon!
+              Content to be updated soon!
             </p>
           </div>
         </div>
@@ -685,7 +568,7 @@
           <p class="accordion-label">What does PM A-Z has to offer?</p>
           <div class="content">
             <p class="accordion-content">
-               Content to be updated soon!
+              Content to be updated soon!
             </p>
           </div>
         </div>
@@ -781,6 +664,9 @@
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/carouselCard.js"></script>
+  <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+  <script src="./js/display-pdf.js"></script>
+
 </body>
 
 </html>

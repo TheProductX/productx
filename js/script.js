@@ -74,8 +74,9 @@ btnNav.addEventListener("click", () => {
 
 // Smooth scroll
 // Smooth scroll behavior
-const allLinks = document.querySelectorAll(".main-nav-link");
+const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach((link) => {
+  if (link.id === "unlink-active") return;
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const href = link.getAttribute("href");
@@ -120,7 +121,7 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-150px",
+    rootMargin: "-80px",
   }
 );
 obs.observe(sectionHero);

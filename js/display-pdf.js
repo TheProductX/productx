@@ -7,7 +7,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
     {
       content: {
         location: {
-          url: "https://pdfhost.io/edit?doc=574cbe8f-0972-44ff-8ef6-f8f6f5359aea",
+          url: "file:///Users/rajshekhar.singh/Downloads/ProductX.pdf",
         },
       },
       metaData: { fileName: "ProductX" },

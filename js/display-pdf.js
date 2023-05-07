@@ -7,10 +7,10 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
     {
       content: {
         location: {
-          url: "https://documentservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf",
+          url: "https://pdfhost.io/edit?doc=574cbe8f-0972-44ff-8ef6-f8f6f5359aea",
         },
       },
-      metaData: { fileName: "Dummy File" },
+      metaData: { fileName: "ProductX" },
     },
     {
       embedMode: "SIZED_CONTAINER",

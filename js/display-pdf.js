@@ -7,7 +7,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
     {
       content: {
         location: {
-          url: "file:///Users/rajshekhar.singh/Downloads/ProductX.pdf",
+          url: "/pdf/ProductX.pdf",
         },
       },
       metaData: { fileName: "ProductX" },
